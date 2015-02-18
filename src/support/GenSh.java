@@ -63,9 +63,9 @@ public class GenSh {
       writer.write("clear\n");
       writer.write("cat src/" + exampleDir.getName() + "/" + javaFile.getName() + "\n");
       writer.write("echo\n");
-      writer.write("echo \"----------------------------------------------------------------------------\"\n");
+      writer.write("echo \"--------------------------------------------------------------------------------------------------\"\n");
       writer.write("echo \"java " + vmArgs + " -cp bin " + className + "\"\n");
-      writer.write("echo \"----------------------------------------------------------------------------\"\n");
+      writer.write("echo \"--------------------------------------------------------------------------------------------------\"\n");
       //writer.write("if [ \"$1\" -ne \"-\" ]\n");
       //writer.write("then\n");
       writer.write(JAVA + " " + vmArgs + " -cp bin " + className + " 2>&1 " + postprocessors + " \n");
