@@ -18,10 +18,10 @@ public class Monomorphic {
   public static void main(String[] args)
     throws InterruptedException
   {
-    Func f = new Square();
+    Func func = new Square();
     
     for ( int i = 0; i < 20_000; ++i ) {
-      apply(f, i);
+      apply(func, i);
     }
     
     Thread.sleep(5_000);

@@ -19,17 +19,17 @@ import example10.support.Square;
 })
 public class ChaStorm {
   public static void main(String[] args) throws InterruptedException {
-    Square square = new Square();
+    Func func = new Square();
     
     for ( int i = 0; i < 10_000; ++i ) {
-      apply1(square, i);
-      apply2(square, i);
-      apply3(square, i);
-      apply4(square, i);
-      apply5(square, i);
-      apply6(square, i);
-      apply7(square, i);
-      apply8(square, i);
+      apply1(func, i);
+      apply2(func, i);
+      apply3(func, i);
+      apply4(func, i);
+      apply5(func, i);
+      apply6(func, i);
+      apply7(func, i);
+      apply8(func, i);
     }
     
     System.out.println("Waiting for compiler...");
