@@ -7,7 +7,7 @@ import support.RunWith;
 @RunWith({
   "-XX:-TieredCompilation", "-XX:+PrintCompilation",
   "-XX:+UnlockDiagnosticVMOptions", "-XX:+PrintInlining",
-  // "-XX:CompileCommand=print,example07/DirectInlining::hotMethod"
+  "-XX:CompileCommand=print,example07/DirectInlining::hotMethod"
 })
 @Output(highlight={
   // highlights for PrintCompilation / PrintInlining
