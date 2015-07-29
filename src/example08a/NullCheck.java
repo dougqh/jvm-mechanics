@@ -6,7 +6,7 @@ import support.RunWith;
 @RunWith({
   "-XX:-TieredCompilation", "-XX:+PrintCompilation",
   "-XX:+UnlockDiagnosticVMOptions",
-  "-XX:CompileCommand=print,example08a/ImplicitNullCheck::hotMethod"
+  "-XX:CompileCommand=print,example08a/NullCheck::hotMethod"
 })
 @Output(highlight={"NullCheck::hotMethod", "made not entrant"})
 public class NullCheck {
